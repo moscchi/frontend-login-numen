@@ -1,0 +1,65 @@
+.header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #05a8e9;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.logo {
+    width: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 40px;
+}
+img {
+    
+    width: 150px;
+    height: 40px;
+}
+
+.header .menu {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header .menu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header .sesion-user {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .sesion-user .separator {
+    height: 30px;
+    width: 1px;
+    background-color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-session {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+}
+.btn-session:hover {
+    
+    cursor: pointer;
+    color: #fcfcfc;
+}

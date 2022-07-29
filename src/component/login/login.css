@@ -4,14 +4,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    
+    position: absolute;
+    margin-top: -60px;
 }
 
 .login-form {
     display: grid;
     padding: 30px;
     gap: 30px;
-    margin-top: -60px;
     border: 2px solid #deded6;
     border-radius: 6px;
     background-color: #05a8e9;

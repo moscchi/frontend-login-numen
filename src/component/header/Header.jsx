@@ -14,11 +14,18 @@ export default function Header() {
                 <li><button className="btn-session">Empresas</button></li>
             </ul>
         </div>
+        {
+          window.localStorage.getItem('token') ?
+          
+        <button className="btn-session">Desloguearse</button>
+        :
         <div className="sesion-user">
             <button className="btn-session">Registrarse</button>
             <div className='separator'></div>
             <button className="btn-session">Iniciar Sesión</button>
-        </div>
+        </div> 
+        }
+        
     </div>
 
   )

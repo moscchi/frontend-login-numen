@@ -9,11 +9,14 @@ function Login() {
     const handleLogin = async (event) => {
         try {
             event.preventDefault()
-        const user = loginService({username, password})
+            console.log(username, password);
+        const user = await loginService({username, password})
         console.log(user);
+        window.localStorage.setItem('token', user.token)
         setUser(user)
         setUsername('')
         setPassword('')
+        window.location.reload()
         } catch (error) {
             console.log(error);
         }

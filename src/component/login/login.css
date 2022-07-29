@@ -1,0 +1,29 @@
+.login {
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.login-form {
+    display: grid;
+    padding: 30px;
+    gap: 30px;
+    margin-top: -60px;
+    border: 2px solid #deded6;
+    border-radius: 6px;
+    background-color: #05a8e9;
+}
+
+.login-form input, .login-form button {
+    border-radius: 6px;
+    border: 2px solid #deded6;
+}
+
+.login-form button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

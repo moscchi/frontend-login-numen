@@ -3,6 +3,10 @@ import logo from '../../public/logo.png'
 import './header.css'
 
 export default function Header() {
+  const handleLogout = () => {
+    window.localStorage.clear('token');
+    window.location.reload()
+  }
   return (
     <div className='header'>
         <div className='logo'><img src={logo} alt="" /></div>
@@ -17,7 +21,7 @@ export default function Header() {
         {
           window.localStorage.getItem('token') ?
           
-        <button className="btn-session">Desloguearse</button>
+        <button className="btn-session" onClick={handleLogout}>Desloguearse</button>
         :
         <div className="sesion-user">
             <button className="btn-session">Registrarse</button>

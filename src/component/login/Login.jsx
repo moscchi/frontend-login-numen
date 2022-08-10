@@ -4,18 +4,14 @@ import loginService from '../../services/login'
 function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const [user, setUser] = useState(null)
 
     const handleLogin = async (event) => {
         try {
             event.preventDefault()
             console.log(username, password);
         const user = await loginService({username, password})
-        console.log(user);
-        window.localStorage.setItem('token', user.token)
-        setUser(user)
-        setUsername('')
-        setPassword('')
+        window.localStorage.setItem('username', username)
+        window.localStorage.setItem('token', user)
         window.location.reload()
         } catch (error) {
             console.log(error);

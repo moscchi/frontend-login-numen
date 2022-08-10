@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header/>
-      {window.localStorage.getItem('token') ? <Profile/>:<Login/>}
+      {window.localStorage.getItem('username') ? <Profile/>:<Login/>}
       <Footer/>
     </>
   );
